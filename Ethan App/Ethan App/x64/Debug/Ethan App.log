@@ -1,0 +1,12 @@
+﻿  Main.cpp
+C:\Users\ethan\Documents\Ethan App\Ethan App\Main.cpp(23,36): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\ethan\Documents\Ethan App\Ethan App\Main.cpp(162,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ethan\Documents\Ethan App\Ethan App\Main.cpp(162,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ethan\Documents\Ethan App\Ethan App\Main.cpp(181,108): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ethan\Documents\Ethan App\Ethan App\Main.cpp(181,74): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Point.cpp
+  Tetris.cpp
+C:\Users\ethan\Documents\Ethan App\Ethan App\Tetris.cpp(98,20): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\ethan\Documents\Ethan App\Ethan App\Tetris.cpp(208,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Ethan App.vcxproj -> C:\Users\ethan\Documents\Ethan App\x64\Debug\Ethan App.exe
