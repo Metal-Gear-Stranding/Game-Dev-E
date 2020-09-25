@@ -12,15 +12,15 @@ int main() {
 
 	//Use SFML to load up the Tetris graphics and put them in Sprites
 
-     sf::RenderWindow window(sf::VideoMode(665, 780), tetris.m_stGameTitle);
-     sf::Texture squareTexture, background, startpage;
-     squareTexture.loadFromFile(tetris.m_stSquarePicture);
-     background.loadFromFile(tetris.m_stBackgroudPicture);
-     startpage.loadFromFile(tetris.m_stStartPagePicture);
-     sf::Sprite squareSprite(squareTexture);
-     sf::Sprite backgroundSprite(background);
-     sf::Sprite startpageSprite(startpage);
-     startpageSprite.setScale(1.2, 1);
+    sf::RenderWindow window(sf::VideoMode(665, 780), tetris.m_stGameTitle);
+    sf::Texture squareTexture, background, startpage;
+    squareTexture.loadFromFile(tetris.m_stSquarePicture);
+    background.loadFromFile(tetris.m_stBackgroudPicture);
+    startpage.loadFromFile(tetris.m_stStartPagePicture);
+    sf::Sprite squareSprite(squareTexture);
+    sf::Sprite backgroundSprite(background);
+    sf::Sprite startpageSprite(startpage);
+    startpageSprite.setScale(1.2, 1);
 	
 
 	// Retrieve text lables
@@ -70,8 +70,6 @@ int main() {
 
                 if (event.key.code == sf::Keyboard::Up) {
                     tetris.rotateFigure();
-                    
-                    
                 }
                 if (event.key.code == sf::Keyboard::Right) {
                     tetris.moveToRight();
@@ -80,7 +78,6 @@ int main() {
                     tetris.moveToLeft();
                 }
                 if (event.key.code == sf::Keyboard::Enter) {
-                     
                     tetris.restartGame();
                 }
 
@@ -95,7 +92,6 @@ int main() {
             tetris.moveDown();
         }
 
-
          
         // Check if Start screen is on
         if (tetris.m_bOnStartPage) {
@@ -105,8 +101,6 @@ int main() {
             window.draw(startpageSprite);
             window.draw(textForTitle);
             window.draw(textForStart);
-
-
 
         } else {
 
@@ -119,8 +113,6 @@ int main() {
             // Restore the default delay
             tetris.m_fDelay = 0.5;
 
-
-           
             // Output the elements on the screen
 
             window.clear(sf::Color::White);
