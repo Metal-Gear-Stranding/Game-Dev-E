@@ -12,15 +12,15 @@ int main() {
 
 	//Use SFML to load up the Tetris graphics and put them in Sprites
 
-	sf::RenderWindow window(sf::VideoMode(665, 780), tetris.m_stGameTitle);
-	sf::Texture squareTexture, background, startpage;
-	squareTexture.loadFromFile(tetris.m_stSquarePicture);
-	background.loadFromFile(tetris.m_stBackgroudPicture);
-    startpage.loadFromFile(tetris.m_stStartPagePicture);
-	sf::Sprite squareSprite(squareTexture);
-	sf::Sprite backgroundSprite(background);
-    sf::Sprite startpageSprite(startpage);
-    startpageSprite.setScale(1.2, 1);
+     sf::RenderWindow window(sf::VideoMode(665, 780), tetris.m_stGameTitle);
+     sf::Texture squareTexture, background, startpage;
+     squareTexture.loadFromFile(tetris.m_stSquarePicture);
+     background.loadFromFile(tetris.m_stBackgroudPicture);
+     startpage.loadFromFile(tetris.m_stStartPagePicture);
+     sf::Sprite squareSprite(squareTexture);
+     sf::Sprite backgroundSprite(background);
+     sf::Sprite startpageSprite(startpage);
+     startpageSprite.setScale(1.2, 1);
 	
 
 	// Retrieve text lables
